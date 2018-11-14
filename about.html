@@ -29,12 +29,27 @@
                     I hope you enjoy looking through some of my work.
                 </p>
             </article>
+            <aside>
+                    <img id="primImage" src="assets/images/smiley.jpg" alt="smiles" onclick='getImage()' height="42" width="42">
+            </aside>
         </section>
-        <aside>
 
-        </aside>
-        <footer>
 
-        </footer>
+        <script>
+            const images = ["assets/images/smiley.jpg", "assets/images/another.jpg", "assets/images/onemore.jpg"];
+            const alts = ["smiles", "another", "one more"]
+            const img = document.getElementById("primImage");
+            let i = 1;
+            getImage=function(){
+                let image = images[i];
+                let alt = images[i++];
+                if(i>2) i=0;
+                img.src=image;
+                img.alt=alt;
+            }
+        </script>
+
+
+
     </body>
 </html>

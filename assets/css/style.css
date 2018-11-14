@@ -1,6 +1,14 @@
 body, html {
     font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 #index {
@@ -12,8 +20,7 @@ body, html {
         ),
         url(http://www.itaniumsolutions.org/pics/max/23/238645_daisy-flower-wallpaper.jpg);
 
-    height: 100%;
-    width: 100%; 
+
 
     /*Scale and center the image for larger screen and resize*/
     background-position: center;
@@ -66,7 +73,7 @@ nav > div > a {
     flex-grow: 3;
 }
 
-#tool {
+#about {
     flex-grow: 1;
 }
 
@@ -81,7 +88,7 @@ nav > div > a:hover{
 }
 
 header {
-    height: 80%;
+    height: 75%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -91,7 +98,7 @@ header {
 }
 
 footer {
-    height: 10%;
+    height: 15%;
     width: 100%;
     text-align: center;
     color: #fff;
