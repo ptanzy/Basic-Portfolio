@@ -2,12 +2,15 @@
 <html lang="en-us">
     <head>
         <title>About Peter Tanzy</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">        
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <link rel="stylesheet" type="text/css" href="assets/css/about_style.css">        
     </head>
-    <body>
+    <body id="about">
+
         <nav>
             <div id=title>
-                <a href="index.html">ICON_HOLDER</a>
+                <a href="index.html"><img alt="Peter Tanzy link" src="assets/images/bw_name.svg" width="300" height="50"></a>
             </div>
             <div id=navButtons>
                 <a id="about" href="#">About</a>
@@ -16,24 +19,34 @@
                 <a id="contact" href="contact.html">Contact</a>
             </div>
         </nav>
+
         <section>
             <article>
                 <p>
                     I love to code! I really enjoy the problem solving and analytical aspects in programming. I work in the field, having two years
                     experience coding in JavaScript. I have used such technolgies as D3.js, Node.js, and PptxGenJS. I have some experience with
                     ExtJS and Express.
-
+                    <br><br>
                     Some of my hobbies are exercising, hikings, and photography. My passions include writing and reading, as well as cooking anything
                     Italian. I love to toss some pizza dough or roll out some pasta dough. There is nothing I love more than fresh pesto!
-
+                    <br><br>
                     I hope you enjoy looking through some of my work.
                 </p>
             </article>
             <aside>
-                    <img id="primImage" src="assets/images/smiley.jpg" alt="smiles" onclick='getImage()' height="42" width="42">
+                    <img id="primImage" src="assets/images/smiley.jpg" alt="smiles" onclick='getImage()'>
             </aside>
         </section>
 
+        <footer>
+            <h3>Connect With Me!</h3>
+            <div>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <p>A quick thank you for perusing my portfolio. Enjoy!</p>
+        </footer>
 
         <script>
             const images = ["assets/images/smiley.jpg", "assets/images/another.jpg", "assets/images/onemore.jpg"];
