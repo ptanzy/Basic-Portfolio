@@ -8,33 +8,37 @@
     </head>
     <body id="about">
 
+        <!-- Nav bar which will be located horizontally on the top of page. Title button is svg-->
         <nav>
             <div id=title>
                 <a href="index.html"><img alt="Peter Tanzy link" src="assets/images/bw_name.svg" width="300" height="50"></a>
             </div>
             <div id=navButtons>
-                <a id="about" href="#">About</a>
+                <a id="about" class="activeLink" href="#">About</a>
                 <a id="port" href="portfolio.html">Portfolio</a>
                 <a id="skill" href="skills.html">Tools</a>
                 <a id="contact" href="contact.html">Contact</a>
             </div>
         </nav>
 
+        <!-- Section starts below the Nav bar and will be horizontal. Contains article and
+             aside which will be laid out horizontally -->
         <section>
             <article>
                 <p>
-                    I love to code! I really enjoy the problem solving and analytical aspects in programming. I work in the field, having two years
-                    experience coding in JavaScript. I have used such technolgies as D3.js, Node.js, and PptxGenJS. I have some experience with
-                    ExtJS and Express.
+                    I love to code! I really enjoy the problem solving and analytical aspects in programming. I work in the 
+                    field, having two years experience coding in JavaScript. I have used such technolgies as D3.js, Node.js,
+                    and PptxGenJS. I have some experience with ExtJS and Express.
                     <br><br>
-                    Some of my hobbies are exercising, hikings, and photography. My passions include writing and reading, as well as cooking anything
-                    Italian. I love to toss some pizza dough or roll out some pasta dough. There is nothing I love more than fresh pesto!
+                    Some of my hobbies are exercising, hikings, and photography. My passions include writing and reading, as
+                    well as cooking anything Italian. I love to toss some pizza dough or roll out some pasta dough. There is
+                    nothing I love more than fresh pesto!
                     <br><br>
-                    I hope you enjoy looking through some of my work.
+                    I hope you enjoy looking through some of my work (click on the image to advance to the next).
                 </p>
             </article>
             <aside>
-                    <img id="primImage" src="assets/images/smiley.jpg" alt="smiles" onclick='getImage()'>
+                    <img id="primImage" src="assets/images/0.jpg" alt="smiles" onclick='getImage()'>
             </aside>
         </section>
 
@@ -49,19 +53,22 @@
         </footer>
 
         <script>
-            const images = ["assets/images/smiley.jpg", "assets/images/another.jpg", "assets/images/onemore.jpg"];
-            const alts = ["smiles", "another", "one more"]
+            //const image = 
+            const alts = []
             const img = document.getElementById("primImage");
             let i = 1;
             getImage=function(){
-                let image = images[i];
-                let alt = images[i++];
-                if(i>2) i=0;
-                img.src=image;
-                img.alt=alt;
+                //let image = images[i];
+                let alt = [];
+                img.src="assets/images/"+i+".jpg";
+                img.alt="assets/images/"+i+".jpg"; //temporary place holder;
+                if(i>32) i=0;
+                i++
             }
         </script>
-
+    <!-- I really enjoyed this homework and feel like I learned a lot doing it. While I had familiarity with css it really helped
+         to reinforce everything. I did hit some speedbumps with the css, but I was able to google and fix the issue. I'd like to
+        know how I can improve the CSS in this. -->
 
 
     </body>
