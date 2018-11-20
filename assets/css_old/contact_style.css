@@ -1,0 +1,17 @@
+#cnt {
+  background:
+      linear-gradient(
+          rgba(146, 168, 209, 0.85), 
+          rgba(146, 168, 209, 0.85)
+      ),
+      url(http://www.itaniumsolutions.org/pics/max/23/238645_daisy-flower-wallpaper.jpg);
+      /* I had a lot of trouble adding an image to the background in the css for #index from a path assets/images/indexbkgd.jpg when in tried this path the screen turned black */
+
+  /*Scale and center the image for larger screen and resize*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
