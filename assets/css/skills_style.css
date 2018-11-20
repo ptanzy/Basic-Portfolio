@@ -17,6 +17,9 @@ section {
         rgba(146, 168, 209, 0.85)
     ),
     url(https://raw.githubusercontent.com/ptanzy/Basic-Portfolio/master/assets/images/skillsbkgd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: 1px solid #c4b7a6;
     background: #d5e1df; */
     margin: 2.5% 3% 3% 3%

@@ -45,6 +45,10 @@ body, html {
     padding-right: 20px
 }
 
+#title > a {
+    border: white solid;
+}
+
 #navButtons {
     flex-grow: 3;
     display: flex;
@@ -89,10 +93,8 @@ nav > div > a {
     flex-grow: 2;
 }
 
-nav > div > a:hover{
-    opacity: 0.7;
-    width: 100;
-    transform: scale(1.1);
+.activeLink {
+    text-decoration: underline;
 }
 
 header {

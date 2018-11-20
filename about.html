@@ -11,7 +11,7 @@
         <!-- Nav bar which will be located horizontally on the top of page. Title button is svg-->
         <nav>
             <div id=title>
-                <a href="index.html"><img alt="Peter Tanzy link" src="assets/images/bw_name.svg" width="300" height="50"></a>
+                <a href="index.html"><img id="svgName" alt="Peter Tanzy link" src="assets/images/bl_name.svg" onmouseover="hover();" onmouseout="unhover();" width="300" height="50"></a>
             </div>
             <div id=navButtons>
                 <a id="about" class="activeLink" href="#">About</a>
@@ -52,24 +52,32 @@
             <p>A quick thank you for perusing my portfolio. Enjoy!</p>
         </footer>
 
-        <script>
-            //const image = 
-            const alts = []
-            const img = document.getElementById("primImage");
-            let i = 1;
-            getImage=function(){
-                //let image = images[i];
-                let alt = [];
-                img.src="assets/images/"+i+".jpg";
-                img.alt="assets/images/"+i+".jpg"; //temporary place holder;
-                if(i>32) i=0;
-                i++
-            }
-        </script>
     <!-- I really enjoyed this homework and feel like I learned a lot doing it. While I had familiarity with css it really helped
          to reinforce everything. I did hit some speedbumps with the css, but I was able to google and fix the issue. I'd like to
         know how I can improve the CSS in this. -->
-
-
     </body>
+
+    <script>
+        //const image = 
+        const alts = []
+        const img = document.getElementById("primImage");
+        let i = 1;
+        getImage=function(){
+            //let image = images[i];
+            let alt = [];
+            img.src="assets/images/"+i+".jpg";
+            img.alt="assets/images/"+i+".jpg"; //temporary place holder;
+            if(i>40) i=0;
+            i++
+        }
+
+        function hover() {
+            document.getElementById("svgName").setAttribute('src', 'assets/images/wh_name.svg');
+        }
+
+        function unhover() {
+            document.getElementById("svgName").setAttribute('src', 'assets/images/bl_name.svg');
+        }
+    </script>
+
 </html>
