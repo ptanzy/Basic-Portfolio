@@ -18,3 +18,19 @@ section {
   background: #d5e1df; */
   margin: 2% 3% 3% 3%
 }
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
