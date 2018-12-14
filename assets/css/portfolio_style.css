@@ -25,6 +25,15 @@ section {
     margin: 2.5% 3% 3% 3%
 }
 
+section > a > img {
+    border-radius: 25px;
+    /* border: 1px solid #d6cbd3;
+    background: #e6e2d3; */
+    margin: 4% 0 0 2%;
+    width: 35%;
+    height: 50%;
+}
+
 section > img {
     border-radius: 25px;
     /* border: 1px solid #d6cbd3;
